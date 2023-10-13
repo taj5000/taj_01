@@ -88,7 +88,7 @@ pip3 install locust_plugins
 **1.3 Create a file and give it a name locustfile.py**
 
 ~~~
-touch Locustfile.py
+touch locustfile.py
 ~~~
 * **Add the below script in locustfile.py file**
 
