@@ -1,14 +1,3 @@
-# Overview
-## Prerequisites
-## Task 1: Load Testing with locust tool
-## Task 2: Schema Design
-### 2.1 Creating Schemas
-#### 2.1.1 Environmental detail:
-#### 2.1.2 System configuration:
-#### 2.1.3 Defining Management Schema
-## Task 3: Relationships
-## Task 4: Queries & Reporting
-
 <center>
 
 # Load Testing with locust tool
