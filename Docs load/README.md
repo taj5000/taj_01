@@ -238,7 +238,7 @@ podman run -itd --name loadtesting -p 8089:8089 -v <Directory Path>:/mnt/locust 
 
 ### Setting up grafana and postgres -DB
 
-In this step, you're setting up a load test environment with Grafana (for visualization) and Timescale-DB (for data storage).
+In this step, we're setting up a load test environment with Grafana (for visualization) and Timescale-DB (for data storage).
 
 **2.1. Setting up grafana and postgres db.**
 
