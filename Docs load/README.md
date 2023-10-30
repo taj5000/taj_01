@@ -100,58 +100,6 @@ ip a
 ~~~
 
 ~~~
-Add the below data in locustfile.py
-
-from locust import HttpUser, constant, task, between, TaskSet,SequentialTaskSet,events
-import locust_plugins
-
-@events.test_start.add_
-listener 
-def on_test_start(environment, **kwargs):
-    print("A new test is starting")
-
-@events.test_stop.add_listener
-def on_test_stop(environment, **kwargs):
-    print("A new test is ending")
-
-class inactiveUsers(SequentialTaskSet):
-    @task
-    def helloworld(self):
-        with self.client.get("/hello",catch_response=True, name="helloworld",json={
-            },headers={"accept":"application/json","Content-Type":"application/json"})as response:
-            if response.status_code!=200:
-                response.failure("Failed to get item: StatusCode "+str(response.status_code))
-            else:
-                json_response_data=response.json()
-   
-class MyinactiveUsers(HttpUser):
-    wait_time=between(1,2)
-    tasks= [inactiveUsers]
-    host = "http://192.168.29.116:8080"
-  
-~~~
-
-**1.4 Run Locust**: To start a load test using Locust, you need to run the tool and specify the test plan file using the following command.
-
-~~~
-locust locustfile.py 
-~~~
-**Output**
-
-<img src="Img20.png" alt="your-image-description" width="900" height="100" style="border: 2px solid  black;">
-
-
-<img src="Img6.png" alt="your-image-description" width="900" height="100" style="border: 2px solid  black;">
-
-
-* **After running the Script,I found the above Error.**
-
-* After updating line number 5 of the script, it started running.
-
-
-Add the below data in locustfile.py
-~~~
-
 from locust import HttpUser, constant, task, between, TaskSet,SequentialTaskSet,events
 import locust_plugins
 
@@ -179,6 +127,22 @@ class MyinactiveUsers(HttpUser):
     tasks= [inactiveUsers]
     host = "http://192.168.29.161:8080"
 ~~~
+
+
+**1.4 Run Locust**: To start a load test using Locust, you need to run the tool and specify the test plan file using the following command.
+
+~~~
+locust -f locustfile.py
+~~~
+**Output**
+
+<img src="Img20.png" alt="your-image-description" width="900" height="100" style="border: 2px solid  black;">
+
+
+<img src="Img6.png" alt="your-image-description" width="900" height="100" style="border: 2px solid  black;">
+
+
+
 
 **1.4(a)**
 
