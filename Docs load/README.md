@@ -144,6 +144,8 @@ locust -f locustfile.py
 
 **1.4(a) Now go to browser and run localhost:8089**
 
+<img src="Img8.png" alt="your-image-description" width="900" height="300" style="border: 2px solid  black;">
+
 **1.5 Running a  container:**
 ~~~
 podman run -itd --name loadtesting -p 8089:8089 -v <Directory Path>:/mnt/locust localhost/loadtest:v1 -f /mnt/locust/locustfile.py
