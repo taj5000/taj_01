@@ -127,25 +127,7 @@ class MyinactiveUsers(HttpUser):
     tasks= [inactiveUsers]
     host = "http://192.168.29.161:8080"
 ~~~
-
-
-**1.4 Run Locust**: To start a load test using Locust, you need to run the tool and specify the test plan file using the following command.
-
-~~~
-locust -f locustfile.py
-~~~
-**Output**
-
-<img src="Img20.png" alt="your-image-description" width="900" height="100" style="border: 2px solid  black;">
-
-
-<img src="Img6.png" alt="your-image-description" width="900" height="100" style="border: 2px solid  black;">
-
-
-
-
-**1.4(a)**
-
+**1.4(a) Run the file locustfile.py**
 ~~~
 locust -f locustfile.py
 ~~~
@@ -159,6 +141,8 @@ locust -f locustfile.py
 * **locust:** This is the command you use to run the Locust tool. It's like telling your computer to start the "Locust" program.
 
 * **-f locustfile.py:** This part tells the "Locust" program which test plan file to use for the load test. Think of the test plan file as a set of instructions that tell the tool what actions to perform during the load test. The -f stands for "file," and locustfile.py is the name of your test plan file.
+
+**1.4(a) Now go to browser and run localhost:8089**
 
 **1.5 Running a  container:**
 ~~~
