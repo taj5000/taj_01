@@ -89,12 +89,14 @@ pip3 install locust_plugins
 ~~~
 touch locustfile.py
 ~~~
-* **Add the below script in locustfile.py file**
+* **Add the below script in locustfile.py file using**
+  vim locustfile.py
 
 * **Change the IP address , according to your System IP**
 
 <div style="page-break-after: always"></div>
 
+**check the IP by the given commnd**
 ~~~
 ip a
 ~~~
