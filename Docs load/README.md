@@ -91,8 +91,9 @@ touch locustfile.py
 ~~~
 * **Add the below script in locustfile.py file using**
 
-  
+  ~~~
   vim locustfile.py
+  ~~~
 
 * **Change the IP address , according to your System IP by using the given command**
 
