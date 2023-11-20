@@ -195,6 +195,9 @@ cd /home/tajfatima/Downloads/
 tar -xvf loadtest.tar
 ~~~
 
+### Download podman
+Document Link: https://docs.google.com/document/d/1XmXsrH6PyFp6PJCA0tmRPpvYJyDxO_nWaKNm-u0nmKE/edit
+
 **-Run the command:**
 ~~~
 podman load -i loadtest.tar
