@@ -172,12 +172,16 @@ podman run -itd --name loadtesting -p 8089:8089 -v <Directory Path>:/mnt/locust 
 * **localhost/loadtest:** v1 is an image with the in-built locust_plugins.please find the images below.
 
 ### **Note:** 
-**Image building with the help of given link**
-
- 
-
-[Click Here](https://drive.google.com/file/d/1rTd02C1ypJtOlnHLIQPaiWp5N9TrUnX_/view?ts=64b0edc6
-)
+**- Now download the loadtest.tar file from the repo**
+**- select the repo where file is downloaded**
+~~~
+cd Download
+~~~
+**Now select the path :**
+~~~
+pwd
+~~~
+cd /home/tajfatima/Downloads/
 
 <div style="page-break-after: always"></div>
 
