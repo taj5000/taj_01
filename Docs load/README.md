@@ -189,6 +189,19 @@ cd /home/tajfatima/Downloads/
 
 <img src="Img10.png" alt="your-image-description" width="900" height="30" style="border: 2px solid  black;">
 
+- Now untar the loadtest.tar file
+
+~~~
+tar -xvf loadtest.tar
+~~~
+
+**-Run the command:**
+~~~
+podman load -i loadtest.tar
+~~~
+
+
+
 
 
 
@@ -254,7 +267,7 @@ This sets the name of the container to "timescale-postgres". You can choose any 
 
 * **-e TIMESCALEDB_TELEMETRY=off:** This sets the environment variable TIMESCALEDB_TELEMETRY to "off", which turns off telemetry data collection for TimescaleDB.
 
-* **-v <directory Path>:/var/lib/postgresql/data:** This mounts a volume from the host machine to the container. The <directory Path> should be replaced with the actual path on your host machine. This is used to store the PostgreSQL data files persistently, so data isn't lost when the container is stopped.
+* **-v <directory Path>:/var/lib/postgresql/data:** This mounts a volume from the host machine to the container. The <directory Path> should be replaced with the actual path on my host machine. This is used to store the PostgreSQL data files persistently, so data isn't lost when the container is stopped.
 
 * **cyberw/locust-timescale:4:** This specifies the name and version of the container image you're using for this PostgreSQL container. It will run the specified version of the "locust-timescale" image.
 
